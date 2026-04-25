@@ -1,0 +1,9 @@
+downloads/
+dist/
+*.log
+*.spec
+__pycache__/
+*.pyc
+.venv/
+venv/
+
