@@ -134,8 +134,6 @@ class YupooDownloader:
             src = img_tag.get('data-origin-src', '')
             if not src:
                 continue
-            # data-origin-src returns //photo.yupoo.com/user/imgid/HASH.ext
-            # Strip the hash filename and use the standard size naming instead
             base = '/'.join(src.split('/')[:-1])
             prefix = 'https:' if src.startswith('//') else ''
             imgs.append(f"{prefix}{base}/{self.size}.jpg")
